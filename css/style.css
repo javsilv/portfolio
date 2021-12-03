@@ -2,7 +2,10 @@
 @import 'https://fonts.googleapis.com/css?family=Fauna+One';
 
 /*---------- Global Style ----------*/
-
+.clock {
+   background: blue;
+  }
+  
 body {
     color: #222;
     font-family: 'Fauna One', serif;

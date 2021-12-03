@@ -37,7 +37,9 @@
       <!-- Header -->
       <div class="span12">
          <div class="col-md-6 no-gutter text-center fill">
-            <h2 class="vcenter">Simple is beautiful</h2>
+            <h2 class="vcenter">Javier A.</h2>
+            <h3 class="vcenter">Developer Java BackEnd Jr.</h3>
+            <h3 class="clock"></h3>
          </div>
          <div class="col-md-6 no-gutter text-center">
             <div id="header" data-speed="2" data-type="background">
@@ -68,4 +70,35 @@
       <script src="js/modernizr.js"></script>
       <script src="js/script.js"></script>
    </body>
+
+  <script>
+
+
+window.onload = function() {
+
+   function clock() {// We create a new Date object and assign it to a variable called "time".
+var time = new Date(),
+    
+    // Access the "getHours" method on the Date object with the dot accessor.
+    hours = time.getHours(),
+    
+    // Access the "getMinutes" method with the dot accessor.
+    minutes = time.getMinutes(),
+    
+    
+    seconds = time.getSeconds();
+
+document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+  
+  function harold(standIn) {
+    if (standIn < 10) {
+      standIn = '0' + standIn
+    }
+    return standIn;
+  }
+}
+setInterval(clock, 1000);
+};
+     
+  </script>
 </html>
