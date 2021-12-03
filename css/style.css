@@ -2,8 +2,18 @@
 @import 'https://fonts.googleapis.com/css?family=Fauna+One';
 
 /*---------- Global Style ----------*/
-.clock {
-   background: blue;
+.current {   
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #111;
+    line-height: 1.5em;
+    margin-top: 0;
+    position: relative;
+    top: 70%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
   }
   
 body {
