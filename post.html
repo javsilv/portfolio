@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Completo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-content {
+            margin-bottom: 20px;
+        }
+
+        .post-content img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .post-content h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .post-content p {
+            color: #666;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .ad-space {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+            border-radius: 8px;
+            color: #999;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const postId = urlParams.get('id');
+            if (postId) {
+                // Aquí puedes cargar dinámicamente el contenido del post basado en el postId
+                const postContent = {
+                    1: {
+                        title: 'Título del Blog Post 1',
+                        date: '23 de julio de 2024',
+                        author: 'Javier',
+                        image: 'img/blog/API.jpeg',
+                        content: '¿Qué es una API? Las API son mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones y protocolos.Por ejemplo, el sistema de software del instituto de meteorología contiene datos meteorológicos diarios.La aplicación meteorológica de su teléfono “habla” con este sistema a través de las API y le muestra las actualizaciones meteorológicas diarias en su teléfono.'
+                    },
+                    2: {
+                        title: 'Título del Blog Post 2',
+                        date: '22 de julio de 2024',
+                        author: 'Javier',
+                        image: 'imagen2.jpg',
+                        content: 'Este es el contenido completo del blog post 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna...'
+                    }
+                    // Añade más posts según sea necesario
+                };
+
+                const post = postContent[postId];
+                if (post) {
+                    document.getElementById('post-title').textContent = post.title;
+                    document.getElementById('post-date').textContent = post.date;
+                    document.getElementById('post-author').textContent = post.author;
+                    document.getElementById('post-image').src = post.image;
+                    document.getElementById('post-content').textContent = post.content;
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="post-content">
+            <img id="post-image" alt="Imagen del blog">
+            <h2 id="post-title"></h2>
+            <p class="meta">Publicado el <span id="post-date"></span> por <span id="post-author"></span></p>
+            <p id="post-content"></p>
+        </div>
+        <div class="ad-space">
+            Espacio publicitario 1
+        </div>
+        <div class="ad-space">
+            Espacio publicitario 2
+        </div>
+    </div>
+</body>
+
+</html>
