@@ -551,7 +551,8 @@ a:visited {
   height: 100vh !important;
   object-fit: cover;
 }
-.footer {
+
+footer {
   display: flex;
   justify-content: center;
   gap: 20px;
