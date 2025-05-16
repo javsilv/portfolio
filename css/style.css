@@ -47,7 +47,7 @@ h5,
 h6 {
   font-family: "Poppins";
   font-weight: 200;
-  color: #111;
+  color: #ffffff;
   line-height: 1.5em;
   margin-top: 0;
 }
@@ -59,7 +59,7 @@ p {
 p,
 ul,
 li {
-  color: #666;
+  color: #ffffff;
 }
 section {
   padding-top: 185px;
@@ -71,7 +71,7 @@ section {
 }
 a,
 a:link {
-  color: #666;
+  color: #fafafa;
 }
 a:hover,
 a:focus,
