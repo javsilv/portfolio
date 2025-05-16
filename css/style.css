@@ -76,7 +76,7 @@ a:link {
 a:hover,
 a:focus,
 a:visited {
-  color: #666;
+  color: #000;
   text-decoration: none;
 }
 .vcenter {
@@ -240,8 +240,8 @@ a:visited {
   transition: all 1s ease;
 }
 .nav-item {
-  font-family: "Open Sans", sans-serif;
-  margin: 10px auto;
+  font-family: "Poppins", sans-serif;
+  margin: 1px;
   text-align: center;
   color: #222;
 }
