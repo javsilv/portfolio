@@ -560,3 +560,17 @@ footer {
   gap: 20px;
   padding: 30px;
 }
+
+#container-about {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+#container-about:hover,
+#container-about:focus,
+#container-about:visited,
+#container-about:active {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid #ffffff;
+}
