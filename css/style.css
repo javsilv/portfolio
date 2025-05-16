@@ -331,10 +331,10 @@ a:visited {
   }
 }
 .showNav {
-  -webkit-animation: showNav 1s ease forwards;
-  -moz-animation: showNav 1s ease forwards;
-  -o-animation: showNav 1s ease forwards;
-  animation: showNav 1s ease forwards;
+  -webkit-animation: showNav 0.3s ease forwards;
+  -moz-animation: showNav 0.3s ease forwards;
+  -o-animation: showNav 0.3s ease forwards;
+  animation: showNav 0.3s ease forwards;
 }
 @keyframes hideNav {
   from {
