@@ -1,6 +1,7 @@
 /* Preload img */
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png)
+    url(../img/next.png);
   display: none;
 }
 
@@ -62,10 +63,10 @@ body.lb-disable-scrolling {
 
 .lb-container {
   height: 100vh !important;
-    left: 0;
-    position: fixed!important;
-    top: 0;
-    width: 100% !important;
+  left: 0;
+  position: fixed !important;
+  top: 0;
+  width: 100% !important;
 }
 
 .lb-loader {
@@ -101,10 +102,11 @@ body.lb-disable-scrolling {
 
 .lb-nav a {
   outline: none;
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 }
 
-.lb-prev, .lb-next {
+.lb-prev,
+.lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
@@ -205,9 +207,9 @@ body.lb-disable-scrolling {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  position:fixed;
-  right:20px;
-  top:20px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
 }
 
 .lb-data .lb-close:hover {
