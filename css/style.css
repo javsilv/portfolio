@@ -73,12 +73,15 @@ a,
 a:link {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
 }
+.bar {
+  color: #fefefe;
+}
+
 a:hover,
 a:focus,
 a:visited {
-  color: #ffffff;
+  color: #000;
   text-decoration: none;
 }
 .vcenter {
@@ -536,11 +539,12 @@ a:visited {
 }
 .portfolio-sorting {
   padding-left: 15px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
 }
 .portfolio-sorting li a:hover,
 .portfolio-sorting li a.active {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #222;
 }
 .portfolio-item {
   margin-bottom: 30px;
