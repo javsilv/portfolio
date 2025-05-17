@@ -563,6 +563,7 @@ footer {
   justify-content: center;
   margin-top: auto;
   background-color: white;
+  flex-shrink: 0;
 }
 
 #container-about {
@@ -577,4 +578,12 @@ footer {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 2px solid #ffffff;
+}
+
+#links-about:hover,
+#links-about:focus,
+#links-about:visited,
+#links-about:active {
+  color: #ffffff;
+  text-decoration: none;
 }
